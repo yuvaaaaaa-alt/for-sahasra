@@ -1,13 +1,12 @@
-let yesButton = document.getElementById("yes");
-let noButton = document.getElementById("no");
-let noCount = 0;
+document.addEventListener("DOMContentLoaded", function () {
+    const yesButton = document.getElementById("yesButton");
+    const noButton = document.getElementById("noButton");
 
-noButton.addEventListener("click", function() {
-    noCount++;
-    yesButton.style.fontSize = (16 + noCount * 5) + "px";
-    noButton.innerText = "Please press Yes! 😢";
-});
+    let size = 16; // Initial font size in pixels
 
-yesButton.addEventListener("click", function() {
-    window.location.href = "pages/yes.html";
+    noButton.addEventListener("click", function () {
+        size += 10; // Increase size
+        yesButton.style.fontSize = size + "px"; // Apply new size
+        noButton.innerText = "Please press Yes 😭"; // Change text
+    });
 });
