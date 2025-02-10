@@ -32,6 +32,7 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
 
 /* No Button - Black Border */
@@ -44,6 +45,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     margin-left: 20px;
+    transition: all 0.2s ease-in-out;
 }
 
 /* Add space between buttons */
