@@ -1,45 +1,52 @@
 body {
-    font-family: Arial, sans-serif; 
-    font-size: 1.3em;
-    text-align: center;
     background-color: pink;
+    text-align: center;
+    font-family: Arial, sans-serif;
 }
 
 .container {
-    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
-h1 {
-    font-size: 2.5em;
+.valentine-gif {
+    width: 300px; /* Adjust GIF size */
+    height: auto;
+}
+
+.question-text {
+    font-size: 2em;
+    font-weight: bold;
     color: red;
 }
 
-button {
-    font-size: 18px;
+/* Yes Button - Keep Red */
+.yes-btn {
+    font-size: 16px;
     padding: 10px 20px;
-    margin: 10px;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-#yes {
     background-color: red;
     color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-#no {
+/* No Button - Black Border */
+.no-btn {
+    font-size: 16px;
+    padding: 10px 20px;
     background-color: white;
     color: black;
     border: 2px solid black;
-}
-.valentine-gif {
-    width: 250px;  /* Adjust size as needed */
-    height: auto;
-    display: block;
-    margin: 0 auto 20px; /* Centers the GIF */
-    border-radius: 10px; /* Optional: Adds rounded corners */
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
 }
 
-
-
+/* Add space between buttons */
+.buttons {
+    margin-top: 20px;
+}
