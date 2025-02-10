@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif; 
+    font-size: 1.3em;
+    text-align: center;
+    background-color: pink;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: red;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#yes {
+    background-color: red;
+    color: white;
+}
+
+#no {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+.valentine-gif {
+    width: 250px;  /* Adjust size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px; /* Centers the GIF */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+
+
