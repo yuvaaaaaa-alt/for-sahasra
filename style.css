@@ -1,54 +1,38 @@
 body {
-    background-color: pink;
+    background-color: pink; /* Background is pink */
     text-align: center;
     font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
 }
 
-.valentine-gif {
-    width: 300px; /* Adjust GIF size */
-    height: auto;
-}
-
+/* Love message text */
 .question-text {
     font-size: 2em;
     font-weight: bold;
     color: red;
 }
 
-/* Yes Button - Keep Red */
-.yes-btn {
-    font-size: 16px;
-    padding: 10px 20px;
-    background-color: red;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-}
-
-/* No Button - Black Border */
-.no-btn {
-    font-size: 16px;
-    padding: 10px 20px;
-    background-color: white;
+/* Center and style the paragraph text */
+.message-text {
+    font-size: 1.2em;
     color: black;
-    border: 2px solid black;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: 20px;
-    transition: all 0.2s ease-in-out;
+    text-align: center;
+    margin-top: 10px;
 }
 
-/* Add space between buttons */
-.buttons {
+/* GIF styling */
+.valentine-gif {
+    width: 300px;
+    height: auto;
     margin-top: 20px;
 }
